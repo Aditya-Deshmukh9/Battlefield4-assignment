@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Rajdhani";
+  color: white;
+  overflow: hidden;
+}
+
+.bgImg {
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.6),
+      rgba(16, 16, 16, 0.6)
+    ),
+    url(/menu__background.png);
+}
+
+#mainContent::-webkit-scrollbar {
+  width: 2px;
+}
+
+#mainContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#mainContent::-webkit-scrollbar-thumb {
+  background-color: white;
+  /* outline: 1px solid slategrey; */
+}
+
+ul > li {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
